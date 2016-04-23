@@ -5,7 +5,7 @@
 
 Vagrant.configure(2) do |config|
   config.vm.box = "centos/7"
-  config.vm.hostname = "centos7.local"
+  config.vm.hostname = "apache-php7.local"
   config.vm.network "private_network", ip: "192.168.33.163"
   config.vm.synced_folder "./", "/vagrant"
   config.vm.provider "virtualbox" do |vb|
